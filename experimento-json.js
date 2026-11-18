@@ -1,4 +1,5 @@
-// 1.1 (M1)
+//MÓDULO 01
+// 1.1 
 const historicoMensagens = [
     {
         id: 1,
@@ -23,7 +24,7 @@ const jsonValido = '[{"id": 10, "usuario": "Lucas", "texto": "Teste"}]';
 const recuperacao = JSON.parse(jsonValido);
 console.log("Mensagem recuperada!", recuperacao[0].texto);
 
-const jsonQuebrado = '[{ id: 10, quebrado: sim }]';
+const jsonQuebrado = '[{ id: 10, quebrado: sim ';
 
 try {
   JSON.parse(jsonQuebrado)
